@@ -21,7 +21,7 @@ const getData = async () => {
 
         data.forEach(item => {
             const title = document.createElement('p')
-            title.textContent = item.title ?? 'Untitled item'
+            title.textContent = item.name ?? 'Untitled item'
             content.appendChild(title)
         })
     } catch (error) {
